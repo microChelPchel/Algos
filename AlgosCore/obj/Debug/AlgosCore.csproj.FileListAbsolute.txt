@@ -1,0 +1,6 @@
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\bin\Debug\AlgosCore.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\bin\Debug\AlgosCore.pdb
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\obj\Debug\AlgosCore.csproj.AssemblyReference.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\obj\Debug\AlgosCore.csproj.CoreCompileInputs.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\obj\Debug\AlgosCore.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore\obj\Debug\AlgosCore.pdb

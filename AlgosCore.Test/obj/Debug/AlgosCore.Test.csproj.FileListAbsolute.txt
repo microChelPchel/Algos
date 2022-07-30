@@ -1,0 +1,17 @@
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\AlgosCore.Test.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\AlgosCore.Test.pdb
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\AlgosCore.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\AlgosCore.pdb
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\obj\Debug\AlgosCore.Test.csproj.AssemblyReference.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\obj\Debug\AlgosCore.Test.csproj.CoreCompileInputs.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\obj\Debug\AlgosCore.Test.csproj.CopyComplete
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\obj\Debug\AlgosCore.Test.dll
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgosCore.Test\obj\Debug\AlgosCore.Test.pdb
