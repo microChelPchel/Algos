@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ef0a2ca2-f02b-47c8-86be-dbba64c7df7c": {
+      "ProjectGuid": "ef0a2ca2-f02b-47c8-86be-dbba64c7df7c",
+      "DisplayName": "AlgorithmAndStructedData",
+      "ColorIndex": 0
+    },
+    "a40cf90b-cbe0-4143-9064-4656823eb302": {
+      "ProjectGuid": "a40cf90b-cbe0-4143-9064-4656823eb302",
+      "DisplayName": "AlgosCore",
+      "ColorIndex": 1
+    },
+    "4b1a8d6b-53c0-4f5b-98d0-b63cb4852647": {
+      "ProjectGuid": "4b1a8d6b-53c0-4f5b-98d0-b63cb4852647",
+      "DisplayName": "AlgosCore.Test",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

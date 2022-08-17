@@ -1,0 +1,11 @@
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\bin\Debug\AlgorithmAndStructedData.exe.config
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\bin\Debug\AlgorithmAndStructedData.exe
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\bin\Debug\AlgorithmAndStructedData.pdb
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.csproj.AssemblyReference.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.csproj.SuggestedBindingRedirects.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Form1.resources
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Properties.Resources.resources
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.csproj.GenerateResource.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.csproj.CoreCompileInputs.cache
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.exe
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.pdb

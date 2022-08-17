@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithm\Sorted.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StructData\LinkedList.cs" />
     <Compile Include="StructData\Node.cs" />
     <Compile Include="StructData\Queue.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Algorithm\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
