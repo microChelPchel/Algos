@@ -54,8 +54,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Algorithm.cs" />
-    <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="Models\Base\Algorithm.cs" />
+    <Compile Include="Models\Base\TaskModel.cs" />
+    <Compile Include="Models\Sort\BubbleSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

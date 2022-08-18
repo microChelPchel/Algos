@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 
-namespace AlgorithmAndStructedData.Models
+namespace AlgorithmAndStructedData.Models.Base
 {
-    internal class TaskModel<T>
+    internal class TaskModel
     {
+        private string _name;
         private string _textQuestion;
-        private List<T> _textQuestionAnswer;
+        private List<string> _textQuestionAnswer;
         private string _solution;
 
-        public TaskModel(string textQuestion, List<T> textQuestionAnswer, string solution)
+        public TaskModel(string textQuestion, List<string> textQuestionAnswer, string solution)
         {
             _textQuestion= textQuestion;
             _textQuestionAnswer= textQuestionAnswer;
@@ -21,7 +22,7 @@ namespace AlgorithmAndStructedData.Models
             private set { _textQuestion = value; }
         }
 
-        public List<T> TextQuestionAnswer
+        public List<string> TextQuestionAnswer
         { 
             get { return _textQuestionAnswer; }
             private set { _textQuestionAnswer = value; }
@@ -31,6 +32,13 @@ namespace AlgorithmAndStructedData.Models
         {
             get { return _solution; }
             private set { _solution = value; }
+        }
+
+      
+        public string Name
+        {
+            get { return _name; }
+            set { _name = value; }
         }
 
     }

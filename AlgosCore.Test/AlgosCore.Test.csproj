@@ -56,12 +56,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AlgosCore\AlgosCore.csproj">
-      <Project>{A40CF90B-CBE0-4143-9064-4656823EB302}</Project>
-      <Name>AlgosCore</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Algorithm\" />
     <Folder Include="Services\" />
     <Folder Include="StructData\" />

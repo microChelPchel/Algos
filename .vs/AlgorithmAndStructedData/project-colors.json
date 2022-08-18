@@ -15,7 +15,12 @@
       "ProjectGuid": "4b1a8d6b-53c0-4f5b-98d0-b63cb4852647",
       "DisplayName": "AlgosCore.Test",
       "ColorIndex": 2
+    },
+    "1f1bc622-f138-4855-a988-79a77cb919f8": {
+      "ProjectGuid": "1f1bc622-f138-4855-a988-79a77cb919f8",
+      "DisplayName": "MainProjectTest",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

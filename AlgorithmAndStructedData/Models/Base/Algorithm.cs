@@ -1,16 +1,15 @@
 ﻿using System.Collections.Generic;
 
-namespace AlgorithmAndStructedData.Models
+namespace AlgorithmAndStructedData.Models.Base
 {
-    internal class Algorithm<T>
+    internal abstract class Algorithm
     {
+        private string _name;
         private string _text;
         private string _code;
-        /// there create animation 
-        /// 
-        private List<TaskModel<T>> _tasks;
+        private List<TaskModel> _tasks;
 
-        public Algorithm(string text,string code, List<TaskModel<T>> tasks)
+        public Algorithm(string text,string code, List<TaskModel> tasks)
         {
             _text=text;
             _code=code;
@@ -29,11 +28,21 @@ namespace AlgorithmAndStructedData.Models
             private set { _code = value; }
         }
 
-        public List<TaskModel<T>> Tasks
+        public List<TaskModel> Tasks
         { 
             get {return _tasks;}
             private set { _tasks = value; }
         }
+
+        public string Name
+        {
+            get { return _name; }
+            private set { _name = value; }
+        }
+
+        public abstract void Realization();
+        
+
 
     }
 }
