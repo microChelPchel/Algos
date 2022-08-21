@@ -11,6 +11,7 @@ namespace AlgorithmAndStructedData.Logic.FormFactory
         Settings,
         Alghos,
         Structs,
-        Patterns
+        Patterns,
+        BubbleSort
     }
 }

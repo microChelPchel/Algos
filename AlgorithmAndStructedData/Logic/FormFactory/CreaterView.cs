@@ -23,6 +23,9 @@ namespace AlgorithmAndStructedData.Logic.FormFactory
                 case ViewEnum.Patterns:
                     view = new PatternForm();
                     break;
+                case ViewEnum.BubbleSort:
+                    view = new Panel();
+                    break;
             }
 
             return view;

@@ -1,12 +1,5 @@
 ﻿using AlgorithmAndStructedData.Logic.FormFactory;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AlgorithmAndStructedData
@@ -53,12 +46,23 @@ namespace AlgorithmAndStructedData
                 case "Настройки":
                     form = creater.CallView(ViewEnum.Settings);
                     break;
+                case "Сортировка пузырьком":
+                    form = creater.CallView(ViewEnum.BubbleSort);
+                    break;
             }
             if (form==null)
                 return;
             if (form is Form)
             {
                 form.Show();
+                return;
+            }
+
+
+            //течет абстракция
+            if (form is Panel)
+            {
+                AlgorithmPanel.Visible = true;
                 return;
             }
 
