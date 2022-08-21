@@ -30,8 +30,10 @@
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Алгоритмы");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Структуры данных");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Настройки");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Настройки");
             this.panel1 = new System.Windows.Forms.Panel();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.AlgorithmPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,7 +45,6 @@
             this.TasksLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.panel1.SuspendLayout();
             this.AlgorithmPanel.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +59,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 861);
             this.panel1.TabIndex = 0;
+            // 
+            // treeView1
+            // 
+            this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(193)))), ((int)(((byte)(221)))));
+            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.treeView1.Location = new System.Drawing.Point(3, 48);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Алгоритмы";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "Структуры данных";
+            treeNode3.Name = "Node0";
+            treeNode3.Text = "Паттерны проектирования";
+            treeNode4.Name = "Node0";
+            treeNode4.Text = "Настройки";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4});
+            this.treeView1.Size = new System.Drawing.Size(281, 708);
+            this.treeView1.TabIndex = 1;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // label1
             // 
@@ -171,34 +196,14 @@
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name";
             // 
-            // treeView1
-            // 
-            this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(193)))), ((int)(((byte)(221)))));
-            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.treeView1.Location = new System.Drawing.Point(3, 48);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node0";
-            treeNode1.Text = "Алгоритмы";
-            treeNode2.Name = "Node1";
-            treeNode2.Text = "Структуры данных";
-            treeNode3.Name = "Node0";
-            treeNode3.Text = "Настройки";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            this.treeView1.Size = new System.Drawing.Size(281, 708);
-            this.treeView1.TabIndex = 1;
-            // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1434, 861);
             this.Controls.Add(this.AlgorithmPanel);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Справочник алгоритмов и структур данных";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
