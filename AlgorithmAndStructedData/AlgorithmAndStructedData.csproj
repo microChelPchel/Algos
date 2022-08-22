@@ -74,6 +74,7 @@
     <Compile Include="Views\PatternForm.Designer.cs">
       <DependentUpon>PatternForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Presentation\PanelView.cs" />
     <Compile Include="Views\SettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -48,25 +48,36 @@ namespace AlgorithmAndStructedData
                     break;
                 case "Сортировка пузырьком":
                     form = creater.CallView(ViewEnum.BubbleSort);
+                    form.Name = "AlgorithmPanel";
                     break;
             }
             if (form==null)
                 return;
-            if (form is Form)
+            if (form is Form frm)
             {
-                form.Show();
+                frm.ShowDialog();
                 return;
             }
 
-
-            //течет абстракция
             if (form is Panel)
             {
-                AlgorithmPanel.Visible = true;
+                foreach (var control in this.Controls)
+                {
+                    if (control is Control cntrl)
+                    {
+                        if (form.Name == cntrl.Name)
+                        {
+                            cntrl.Visible = true;
+                        }
+                    }
+                }
                 return;
             }
 
         }
+
+
+
     }
 
 }
