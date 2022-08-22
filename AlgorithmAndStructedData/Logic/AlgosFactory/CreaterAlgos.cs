@@ -11,7 +11,7 @@ namespace AlgorithmAndStructedData.Logic.AlgosFactory
 
         }
 
-        public Algorithm CreateAlgos(AlgosEnum type)
+        public Algorithm CreateAlgorithm(AlgosEnum type)
         {
             Algorithm algorithm = null;
             switch (type)

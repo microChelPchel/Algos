@@ -1,4 +1,5 @@
-﻿using AlgorithmAndStructedData.Models.Base;
+﻿using AlgorithmAndStructedData.Logic.AlgosFactory;
+using AlgorithmAndStructedData.Models.Base;
 
 namespace AlgorithmAndStructedData.Controllers
 {
@@ -9,9 +10,9 @@ namespace AlgorithmAndStructedData.Controllers
 
         }
 
-        public Algorithm GetAlgorithm()
-        { 
-            return default(Algorithm);
+        public Algorithm GetAlgorithm(AlgosEnum type)
+        {
+            return  new CreaterAlgos().CreateAlgorithm(type);
         }
 
 

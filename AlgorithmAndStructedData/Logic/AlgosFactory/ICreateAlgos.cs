@@ -4,6 +4,6 @@ namespace AlgorithmAndStructedData.Logic.AlgosFactory
 {
     internal interface ICreateAlgos
     {
-        Algorithm CreateAlgos(AlgosEnum type);
+        Algorithm CreateAlgorithm(AlgosEnum type);
     }
 }
