@@ -1,4 +1,5 @@
-﻿using AlgorithmAndStructedData.Logic.FormFactory;
+﻿using AlgorithmAndStructedData.Controllers;
+using AlgorithmAndStructedData.Logic.FormFactory;
 using System;
 using System.Windows.Forms;
 
@@ -7,9 +8,12 @@ namespace AlgorithmAndStructedData
     public partial class MainForm : Form
     {
         private bool _firstStartFlag = false;
+
+        private AlgorithmController _algorithmController;
         public MainForm()
         {
             InitializeComponent();
+            _algorithmController = new AlgorithmController();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -75,8 +79,6 @@ namespace AlgorithmAndStructedData
             }
 
         }
-
-
 
     }
 
