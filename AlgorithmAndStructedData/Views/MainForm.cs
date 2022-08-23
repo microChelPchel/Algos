@@ -77,8 +77,17 @@ namespace AlgorithmAndStructedData
                 }
                 return;
             }
-
         }
+
+
+
+        //написать присваивание controlам
+        private void SetControlsText()
+        { 
+            
+        
+        }
+
 
     }
 
