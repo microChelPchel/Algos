@@ -1,5 +1,6 @@
 ﻿using AlgorithmAndStructedData.Controllers;
 using AlgorithmAndStructedData.Logic.FormFactory;
+using AlgorithmAndStructedData.Models.Base;
 using System;
 using System.Windows.Forms;
 
@@ -26,6 +27,13 @@ namespace AlgorithmAndStructedData
 
         }
 
+
+        private void NameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             if (!_firstStartFlag)
@@ -36,6 +44,7 @@ namespace AlgorithmAndStructedData
             var creater = new CreaterView();
             string name = e.Node.Text;
             Control form = null;
+            Algorithm algorithm = null;
             switch(name)
             {
                 case "Алгоритмы":
@@ -53,6 +62,7 @@ namespace AlgorithmAndStructedData
                 case "Сортировка пузырьком":
                     form = creater.CallView(ViewEnum.BubbleSort);
                     form.Name = "AlgorithmPanel";
+                    algorithm = _algorithmController.GetAlgorithm(Logic.AlgosFactory.AlgosEnum.BubbleSort);
                     break;
             }
             if (form==null)
@@ -75,20 +85,29 @@ namespace AlgorithmAndStructedData
                         }
                     }
                 }
+                SetAlgosControlsText(algorithm); 
                 return;
             }
         }
 
 
 
-        //написать присваивание controlам
-        private void SetControlsText()
-        { 
-            
-        
+        private void SetAlgosControlsText(Algorithm algorithm)
+        {
+            if (algorithm == null)
+                return;
+            NameLabel.Text = algorithm.Name;
+            textBox1.Text = algorithm.Text;
+            listBox1.Items.Clear();
+
+            foreach (var item in algorithm.Tasks)
+            {
+                listBox1.Items.Add(item);
+            }
+
         }
 
-
+      
     }
 
 }

@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
-            treeNode1});
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Структуры данных");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Настройки");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Структуры данных");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Настройки");
             this.panel1 = new System.Windows.Forms.Panel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.AlgorithmPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.TasksLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.AlgorithmPanel.SuspendLayout();
             this.SuspendLayout();
@@ -69,21 +69,21 @@
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.Location = new System.Drawing.Point(3, 48);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "Node1";
-            treeNode1.Text = "Сортировка пузырьком";
-            treeNode2.Name = "Node0";
-            treeNode2.Text = "Алгоритмы";
-            treeNode3.Name = "Node1";
-            treeNode3.Text = "Структуры данных";
-            treeNode4.Name = "Node0";
-            treeNode4.Text = "Паттерны проектирования";
-            treeNode5.Name = "Node0";
-            treeNode5.Text = "Настройки";
+            treeNode11.Name = "Node1";
+            treeNode11.Text = "Сортировка пузырьком";
+            treeNode12.Name = "Node0";
+            treeNode12.Text = "Алгоритмы";
+            treeNode13.Name = "Node1";
+            treeNode13.Text = "Структуры данных";
+            treeNode14.Name = "Node0";
+            treeNode14.Text = "Паттерны проектирования";
+            treeNode15.Name = "Node0";
+            treeNode15.Text = "Настройки";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5});
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15});
             this.treeView1.Size = new System.Drawing.Size(281, 708);
             this.treeView1.TabIndex = 1;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -101,9 +101,9 @@
             // 
             // AlgorithmPanel
             // 
+            this.AlgorithmPanel.Controls.Add(this.listBox1);
             this.AlgorithmPanel.Controls.Add(this.label2);
             this.AlgorithmPanel.Controls.Add(this.textBox3);
-            this.AlgorithmPanel.Controls.Add(this.checkedListBox1);
             this.AlgorithmPanel.Controls.Add(this.button2);
             this.AlgorithmPanel.Controls.Add(this.button1);
             this.AlgorithmPanel.Controls.Add(this.textBox2);
@@ -136,14 +136,6 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(996, 214);
             this.textBox3.TabIndex = 9;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(11, 338);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(127, 214);
-            this.checkedListBox1.TabIndex = 8;
             // 
             // button2
             // 
@@ -195,11 +187,20 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameLabel.Location = new System.Drawing.Point(536, 9);
+            this.NameLabel.Location = new System.Drawing.Point(479, 9);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(68, 25);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name";
+            this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(11, 338);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 212);
+            this.listBox1.TabIndex = 11;
             // 
             // MainForm
             // 
@@ -225,7 +226,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel AlgorithmPanel;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
@@ -234,6 +234,7 @@
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

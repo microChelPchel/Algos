@@ -9,10 +9,11 @@ namespace AlgorithmAndStructedData.Models.Base
         private string _code;
         private List<TaskModel> _tasks;
 
-        public Algorithm(string text,string code, List<TaskModel> tasks)
+        public Algorithm(string name, string text,string code, List<TaskModel> tasks)
         {
-            _text=text;
-            _code=code;
+            _name = name;
+            _text = text;
+            _code = code;
             _tasks = tasks;        
         }
 

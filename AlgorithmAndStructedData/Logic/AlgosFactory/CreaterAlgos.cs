@@ -17,7 +17,7 @@ namespace AlgorithmAndStructedData.Logic.AlgosFactory
             switch (type)
             {
                 case AlgosEnum.BubbleSort:
-                    algorithm = new BubbleSort("test","test",new List<TaskModel>());
+                    algorithm = new BubbleSort("Сортировка пузырьком","test","test",new List<TaskModel>());
                     break;
             }
             return algorithm;
