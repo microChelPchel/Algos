@@ -9,6 +9,8 @@ namespace AlgorithmAndStructedData.Models.Base
         private List<string> _textQuestionAnswer;
         private string _solution;
 
+        public TaskModel() { }
+
         public TaskModel(string textQuestion, List<string> textQuestionAnswer, string solution)
         {
             _textQuestion= textQuestion;
@@ -19,19 +21,19 @@ namespace AlgorithmAndStructedData.Models.Base
         public string TextQuestion
         { 
             get { return _textQuestion; }
-            private set { _textQuestion = value; }
+            set { _textQuestion = value; }
         }
 
         public List<string> TextQuestionAnswer
         { 
             get { return _textQuestionAnswer; }
-            private set { _textQuestionAnswer = value; }
+            set { _textQuestionAnswer = value; }
         }
 
         public string Solution
         {
             get { return _solution; }
-            private set { _solution = value; }
+            set { _solution = value; }
         }
 
       
