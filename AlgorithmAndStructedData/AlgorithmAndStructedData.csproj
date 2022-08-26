@@ -83,6 +83,12 @@
     <Compile Include="Views\SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SolutionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SolutionForm.Designer.cs">
+      <DependentUpon>SolutionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\StructForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="Views\SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SolutionForm.resx">
+      <DependentUpon>SolutionForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
