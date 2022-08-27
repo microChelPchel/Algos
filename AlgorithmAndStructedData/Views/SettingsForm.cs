@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace AlgorithmAndStructedData.Views
@@ -16,5 +10,22 @@ namespace AlgorithmAndStructedData.Views
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Для сохранения изменений необходимо перезупустить приложение","",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                Process.Start("AlgorithmAndStructedDat1a.exe");
+            }
+            catch(Exception exeption)
+            {
+                MessageBox.Show(exeption.Message);
+            }
+            Environment.Exit(0);
+        }
+
+
+
     }
 }

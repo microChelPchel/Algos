@@ -122,6 +122,15 @@ namespace AlgorithmAndStructedData
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             _currentTaskModel = (TaskModel)listBox1.SelectedItem;
+            SetLabelsText();
+        }
+
+
+        private void SetLabelsText()
+        {
+            if (_currentTaskModel == null)
+                return;
+            textBox3.Text = _currentTaskModel.Name;
         }
     }
 
