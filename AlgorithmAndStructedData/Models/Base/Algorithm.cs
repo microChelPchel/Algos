@@ -6,14 +6,12 @@ namespace AlgorithmAndStructedData.Models.Base
     {
         private string _name;
         private string _text;
-        private string _code;
         private List<TaskModel> _tasks;
 
-        public Algorithm(string name, string text,string code, List<TaskModel> tasks)
+        public Algorithm(string name, string text, List<TaskModel> tasks)
         {
             _name = name;
             _text = text;
-            _code = code;
             _tasks = tasks;        
         }
 
@@ -21,12 +19,6 @@ namespace AlgorithmAndStructedData.Models.Base
         { 
             get { return _text; }
             private set { _text = value; }
-        }
-
-        public string Code
-        {
-            get { return _code; }
-            private set { _code = value; }
         }
 
         public List<TaskModel> Tasks
@@ -43,7 +35,5 @@ namespace AlgorithmAndStructedData.Models.Base
 
         public abstract void Realization();
         
-
-
     }
 }
