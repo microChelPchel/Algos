@@ -34,9 +34,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 360);
+            this.ClientSize = new System.Drawing.Size(514, 332);
             this.Name = "AlgosForm";
-            this.Text = "AlgosForm";
+            this.Text = "Алгоритмы";
             this.Load += new System.EventHandler(this.AlgosForm_Load);
             this.ResumeLayout(false);
 

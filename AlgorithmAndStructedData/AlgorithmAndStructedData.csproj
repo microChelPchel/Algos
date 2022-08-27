@@ -54,6 +54,8 @@
     <Compile Include="Logic\FormFactory\CreaterView.cs" />
     <Compile Include="Logic\FormFactory\ICreaterView.cs" />
     <Compile Include="Logic\FormFactory\ViewEnum.cs" />
+    <Compile Include="Models\Base\Section.cs" />
+    <Compile Include="Models\Base\Statistic.cs" />
     <Compile Include="Views\AlgosForm.cs">
       <SubType>Form</SubType>
     </Compile>
