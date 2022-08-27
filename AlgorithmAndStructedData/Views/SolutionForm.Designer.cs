@@ -53,6 +53,7 @@
             this.label2.Size = new System.Drawing.Size(101, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "NameTask";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -66,9 +67,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(16, 111);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(706, 338);
             this.textBox1.TabIndex = 3;
             // 

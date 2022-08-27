@@ -113,8 +113,15 @@ namespace AlgorithmAndStructedData
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (_currentTaskModel == null)
+                return;
             var formSolution = new SolutionForm(_currentTaskModel); 
             formSolution.ShowDialog();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _currentTaskModel = (TaskModel)listBox1.SelectedItem;
         }
     }
 
