@@ -2,7 +2,7 @@
 
 namespace AlgorithmAndStructedData.Models.Base
 {
-    internal class TaskModel
+    public class TaskModel
     {
         private string _name;
         private string _textQuestion;

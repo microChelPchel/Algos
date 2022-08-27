@@ -1,6 +1,7 @@
 ﻿using AlgorithmAndStructedData.Controllers;
 using AlgorithmAndStructedData.Logic.FormFactory;
 using AlgorithmAndStructedData.Models.Base;
+using AlgorithmAndStructedData.Views;
 using System;
 using System.Windows.Forms;
 
@@ -11,10 +12,13 @@ namespace AlgorithmAndStructedData
         private bool _firstStartFlag = false;
 
         private AlgorithmController _algorithmController;
+        private TaskModel _currentTaskModel;
+
         public MainForm()
         {
             InitializeComponent();
             _algorithmController = new AlgorithmController();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -109,7 +113,8 @@ namespace AlgorithmAndStructedData
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            var formSolution = new SolutionForm(_currentTaskModel); 
+            formSolution.ShowDialog();
         }
     }
 

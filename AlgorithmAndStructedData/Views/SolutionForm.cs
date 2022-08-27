@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AlgorithmAndStructedData.Models.Base;
+using System;
 using System.Windows.Forms;
 
 namespace AlgorithmAndStructedData.Views
 {
     public partial class SolutionForm : Form
     {
-        public SolutionForm()
+        private TaskModel _taskModel;
+
+        public SolutionForm(TaskModel taskModel)
         {
             InitializeComponent();
+            _taskModel = taskModel;
+        }
+
+        private void SolutionForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

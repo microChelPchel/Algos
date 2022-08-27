@@ -48,7 +48,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(126, 18);
+            this.label2.Location = new System.Drawing.Point(125, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 24);
             this.label2.TabIndex = 1;
@@ -83,6 +83,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SolutionForm";
             this.Text = "Решение";
+            this.Load += new System.EventHandler(this.SolutionForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
