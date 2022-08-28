@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AlgorithmController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\SettingController.cs" />
     <Compile Include="Logic\AlgosFactory\AlgosEnum.cs" />
     <Compile Include="Logic\AlgosFactory\CreaterAlgos.cs" />
     <Compile Include="Logic\AlgosFactory\ICreateAlgos.cs" />

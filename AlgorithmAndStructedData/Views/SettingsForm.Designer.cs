@@ -166,6 +166,7 @@
             this.Controls.Add(this.button1);
             this.Name = "SettingsForm";
             this.Text = "Настройки";
+            this.Load += new System.EventHandler(this.SettingsForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
