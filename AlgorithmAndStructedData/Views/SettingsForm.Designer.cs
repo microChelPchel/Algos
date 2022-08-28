@@ -33,12 +33,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -96,15 +96,15 @@
             this.panel1.Size = new System.Drawing.Size(309, 145);
             this.panel1.TabIndex = 4;
             // 
-            // label4
+            // button2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(239, 44);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "00000";
+            this.button2.Location = new System.Drawing.Point(173, 111);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 31);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Сбросить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -116,14 +116,15 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "00000";
             // 
-            // button2
+            // label4
             // 
-            this.button2.Location = new System.Drawing.Point(173, 111);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 31);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Сбросить";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(239, 44);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "00000";
             // 
             // panel2
             // 
@@ -133,16 +134,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(320, 145);
             this.panel2.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(3, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Скрыть разделы:";
             // 
             // checkedListBox1
             // 
@@ -155,6 +146,16 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(144, 109);
             this.checkedListBox1.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(3, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Скрыть разделы:";
             // 
             // SettingsForm
             // 

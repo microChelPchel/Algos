@@ -15,7 +15,7 @@ namespace AlgorithmAndStructedData.Controllers
             }
         }
 
-        protected T Read<T>(string fileName)
+        protected T Load<T>(string fileName)
         {
             var formatter = new BinaryFormatter();
             using (var stream = new FileStream(fileName, FileMode.OpenOrCreate))
