@@ -91,5 +91,10 @@ namespace AlgorithmAndStructedData.Views
                 label5.Text = "0";
             }
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

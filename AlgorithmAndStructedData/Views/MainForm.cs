@@ -165,6 +165,7 @@ namespace AlgorithmAndStructedData
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //TODO: не выводит результат работы
             var result = CompilatorHelper.Compliler(textBox2.Text);
             foreach (var res in result.Output)
             {
