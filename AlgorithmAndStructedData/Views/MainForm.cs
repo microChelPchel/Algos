@@ -12,12 +12,14 @@ namespace AlgorithmAndStructedData
         private bool _firstStartFlag = false;
 
         private AlgorithmController _algorithmController;
+        private SettingController _settingController;
         private TaskModel _currentTaskModel;
 
         public MainForm()
         {
             InitializeComponent();
             _algorithmController = new AlgorithmController();
+            _settingController = new SettingController();
             
         }
 
@@ -28,9 +30,30 @@ namespace AlgorithmAndStructedData
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            var section = _settingController.LoadSettings().Item1;
+            var remIndex = 0;
+            if (section.IsVisAlgo)
+            {
+                SetVisibleNode(0);
+                remIndex++;
+            }
+            if (section.IsVisStruct)
+            {
+                SetVisibleNode(1-remIndex);
+                remIndex++;
+            }
+            if (section.IsVisPattern)
+            {
+                SetVisibleNode(2-remIndex);
+                remIndex++;
+            }
         }
 
+
+        private void SetVisibleNode(int index)
+        {
+            treeView1.Nodes.RemoveAt(index);
+        }
 
         private void NameLabel_Click(object sender, EventArgs e)
         {
