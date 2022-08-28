@@ -1,8 +1,11 @@
 ﻿using AlgorithmAndStructedData.Controllers;
+using AlgorithmAndStructedData.Logic;
 using AlgorithmAndStructedData.Logic.FormFactory;
 using AlgorithmAndStructedData.Models.Base;
 using AlgorithmAndStructedData.Views;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AlgorithmAndStructedData
@@ -39,14 +42,17 @@ namespace AlgorithmAndStructedData
             }
             if (section.IsVisStruct)
             {
-                SetVisibleNode(1-remIndex);
+                SetVisibleNode(1 - remIndex);
                 remIndex++;
             }
             if (section.IsVisPattern)
             {
-                SetVisibleNode(2-remIndex);
+                SetVisibleNode(2 - remIndex);
                 remIndex++;
             }
+
+
+            this.treeView1.SelectedNode = null;
         }
 
 
@@ -117,8 +123,6 @@ namespace AlgorithmAndStructedData
             }
         }
 
-
-
         private void SetAlgosControlsText(Algorithm algorithm)
         {
             if (algorithm == null)
@@ -154,6 +158,22 @@ namespace AlgorithmAndStructedData
             if (_currentTaskModel == null)
                 return;
             textBox3.Text = _currentTaskModel.Name;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Action action = () => CompilatorHelper.Compliler(textBox2.Text);
+            Task task = new Task(action);
+            task.Start();
+            task.Wait();
+            SetVisibleResult(true);
+        }
+
+
+        private void SetVisibleResult(bool visible)
+        {
+            label2.Visible = visible;
+            linkLabel1.Visible = visible;
         }
     }
 

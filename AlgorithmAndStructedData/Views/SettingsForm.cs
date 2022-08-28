@@ -22,7 +22,7 @@ namespace AlgorithmAndStructedData.Views
             
             try
             {
-                Process.Start("AlgorithmAndStructedData.exe");
+               Process.Start("AlgorithmAndStructedData.exe");
             }
             catch(Exception exeption)
             {
