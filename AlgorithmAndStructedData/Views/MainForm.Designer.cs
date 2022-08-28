@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
-            treeNode21});
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Структуры данных");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Настройки");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
+            treeNode26});
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Структуры данных");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Настройки");
             this.panel1 = new System.Windows.Forms.Panel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
@@ -71,21 +71,21 @@
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.Location = new System.Drawing.Point(3, 48);
             this.treeView1.Name = "treeView1";
-            treeNode21.Name = "Node1";
-            treeNode21.Text = "Сортировка пузырьком";
-            treeNode22.Name = "Node0";
-            treeNode22.Text = "Алгоритмы";
-            treeNode23.Name = "Node1";
-            treeNode23.Text = "Структуры данных";
-            treeNode24.Name = "Node0";
-            treeNode24.Text = "Паттерны проектирования";
-            treeNode25.Name = "Node0";
-            treeNode25.Text = "Настройки";
+            treeNode26.Name = "Node1";
+            treeNode26.Text = "Сортировка пузырьком";
+            treeNode27.Name = "Node0";
+            treeNode27.Text = "Алгоритмы";
+            treeNode28.Name = "Node1";
+            treeNode28.Text = "Структуры данных";
+            treeNode29.Name = "Node0";
+            treeNode29.Text = "Паттерны проектирования";
+            treeNode30.Name = "Node0";
+            treeNode30.Text = "Настройки";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode22,
-            treeNode23,
-            treeNode24,
-            treeNode25});
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30});
             this.treeView1.Size = new System.Drawing.Size(281, 708);
             this.treeView1.TabIndex = 1;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -231,6 +231,7 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Посмотреть";
             this.linkLabel1.Visible = false;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // MainForm
             // 

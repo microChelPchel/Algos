@@ -18,12 +18,15 @@ namespace AlgorithmAndStructedData
         private SettingController _settingController;
         private TaskModel _currentTaskModel;
 
+        private string _currentTaskResult;
+
         public MainForm()
         {
             InitializeComponent();
             _algorithmController = new AlgorithmController();
-            _settingController = new SettingController();
-            
+            _settingController = new SettingController(); 
+            _currentTaskResult = "";
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -162,10 +165,11 @@ namespace AlgorithmAndStructedData
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Action action = () => CompilatorHelper.Compliler(textBox2.Text);
-            Task task = new Task(action);
-            task.Start();
-            task.Wait();
+            var result = CompilatorHelper.Compliler(textBox2.Text);
+            foreach (var res in result.Output)
+            {
+                _currentTaskResult += res+'\n';
+            }
             SetVisibleResult(true);
         }
 
@@ -174,6 +178,12 @@ namespace AlgorithmAndStructedData
         {
             label2.Visible = visible;
             linkLabel1.Visible = visible;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var formResult = new ResultForm(_currentTaskResult);
+            formResult.ShowDialog();
         }
     }
 
