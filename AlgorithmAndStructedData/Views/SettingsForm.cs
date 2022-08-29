@@ -111,5 +111,11 @@ namespace AlgorithmAndStructedData.Views
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var formVisible = new DeleateForm();
+            formVisible.ShowDialog();
+        }
     }
 }
