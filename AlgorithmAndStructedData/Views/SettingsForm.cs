@@ -15,6 +15,20 @@ namespace AlgorithmAndStructedData.Views
             _settingController = new SettingController();
         }
 
+        private void FillCollections()
+        {
+            FillComboboxSection();
+        }
+
+        private void FillComboboxSection()
+        {
+            comboBox1.Items.Add("Алгоритмы");
+            comboBox1.Items.Add("Структуры данных");
+            comboBox1.Items.Add("Паттерны");
+            comboBox1.SelectedIndex = 0;
+       }
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Для сохранения изменений необходимо перезупустить приложение","",MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -36,6 +50,7 @@ namespace AlgorithmAndStructedData.Views
             var data = LoadData();
             SetStatistic(data.Item2);
             SetSectionVisible(data.Item1);
+            FillCollections();
         }
 
         private void SetStatistic(Statistic statistic)
