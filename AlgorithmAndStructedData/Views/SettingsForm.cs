@@ -9,6 +9,7 @@ namespace AlgorithmAndStructedData.Views
     public partial class SettingsForm : Form
     {
         private SettingController _settingController;
+
         public SettingsForm()
         {
             InitializeComponent();
@@ -116,6 +117,11 @@ namespace AlgorithmAndStructedData.Views
         {
             var formVisible = new DeleateForm();
             formVisible.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

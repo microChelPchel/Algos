@@ -1,11 +1,12 @@
 ﻿using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using AlgorithmAndStructedData.Logic;
 
 namespace AlgorithmAndStructedData.Controllers
 {
-    public abstract class BaseController
+    public abstract class BaseController : ISaveController
     {
-        protected void Save(object items,string fileName)
+        public void Save(object items,string fileName)
         {
             var formatter = new BinaryFormatter();
 
@@ -15,7 +16,7 @@ namespace AlgorithmAndStructedData.Controllers
             }
         }
 
-        protected T Load<T>(string fileName)
+        public T Load<T>(string fileName)
         {
             var formatter = new BinaryFormatter();
             using (var stream = new FileStream(fileName, FileMode.OpenOrCreate))

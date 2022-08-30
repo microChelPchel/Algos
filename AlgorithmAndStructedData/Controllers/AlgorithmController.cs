@@ -15,6 +15,12 @@ namespace AlgorithmAndStructedData.Controllers
             return  new CreaterAlgos().CreateAlgorithm(type);
         }
 
+        public void SetAlgorithm(string patch)
+        { 
+        
+        
+        }
+
 
 
 

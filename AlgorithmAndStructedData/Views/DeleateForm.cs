@@ -64,7 +64,7 @@ namespace AlgorithmAndStructedData.Views
                     collections = GetCollections(nameItem);
                     break;
             }
-            //TYT
+            //TODO: доделать
 
 
         }

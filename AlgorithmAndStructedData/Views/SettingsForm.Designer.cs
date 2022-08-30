@@ -40,6 +40,8 @@
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -186,6 +186,27 @@
             this.panel3.Size = new System.Drawing.Size(468, 320);
             this.panel3.TabIndex = 6;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.Location = new System.Drawing.Point(191, 276);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(142, 31);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Удаление разделов";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(339, 276);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(120, 31);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Добавить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(7, 126);
@@ -259,26 +280,6 @@
             this.label7.Size = new System.Drawing.Size(223, 20);
             this.label7.TabIndex = 3;
             this.label7.Text = "Редактирование разделов: ";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(339, 276);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 31);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Добавить";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(191, 276);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 31);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Удаление разделов";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // SettingsForm
             // 
