@@ -11,9 +11,5 @@ namespace AlgorithmAndStructedData.Models.Sort
             
         }
 
-        public override void Realization()
-        {
-            
-        }
     }
 }

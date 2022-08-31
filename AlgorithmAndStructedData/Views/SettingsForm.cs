@@ -9,11 +9,13 @@ namespace AlgorithmAndStructedData.Views
     public partial class SettingsForm : Form
     {
         private SettingController _settingController;
+        private AlgorithmController _algorithmController;
 
         public SettingsForm()
         {
             InitializeComponent();
             _settingController = new SettingController();
+            _algorithmController = new AlgorithmController();
         }
 
         private void FillCollections()
@@ -121,7 +123,9 @@ namespace AlgorithmAndStructedData.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            var item = new Algorithm(textBox1.Text,textBox2.Text);
+            _algorithmController.SetAlgorithm(item, textBox1.Text);
+            MessageBox.Show("Сохраненно");
         }
     }
 }

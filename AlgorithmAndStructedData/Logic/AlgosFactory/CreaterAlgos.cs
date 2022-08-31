@@ -54,9 +54,5 @@ test_test_test_test_test_test_test_test_test_test_test_test_test_test_",
             _algorithmController.Save(items, $"{nameAlgorithm}.dat");
         }
 
-
-
-
-
     }
 }
