@@ -1,4 +1,5 @@
-﻿using AlgorithmAndStructedData.Logic.AlgosFactory;
+﻿using AlgorithmAndStructedData.Logic;
+using AlgorithmAndStructedData.Logic.AlgosFactory;
 using AlgorithmAndStructedData.Models.Base;
 
 namespace AlgorithmAndStructedData.Controllers
@@ -17,8 +18,14 @@ namespace AlgorithmAndStructedData.Controllers
 
         public void SetAlgorithm(object items, string nameAlgorithm)
         { 
-            new CreaterAlgos().SetNewAlgorithm(items, nameAlgorithm);
+            new AlgorithmServies().SetNewAlgorithm(items, nameAlgorithm);
         }
 
+        public Algorithm GetAlgorithmFile(string nameAlgorithm)
+        {
+            return new AlgorithmServies().GetAlgorithm(nameAlgorithm);
+        }
+
+      
     }
 }

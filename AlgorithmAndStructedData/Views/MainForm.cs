@@ -184,6 +184,14 @@ namespace AlgorithmAndStructedData
             var formResult = new ResultForm(_currentTaskResult);
             formResult.ShowDialog();
         }
+
+
+        //return type 
+        private void GetAlgorithms()
+        {
+            //var collection = new AlgorithmController().GetAlgorithmFile();
+        }
+
     }
 
 }

@@ -7,11 +7,9 @@ namespace AlgorithmAndStructedData.Logic.AlgosFactory
 {
     internal class CreaterAlgos : ICreateAlgos
     {
-        private AlgorithmController _algorithmController;
 
         public CreaterAlgos()
         {
-            _algorithmController = new AlgorithmController();
         }
 
         public Algorithm CreateAlgorithm(AlgosEnum type)
@@ -42,16 +40,10 @@ test_test_test_test_test_test_test_test_test_test_test_test_test_test_",
 
 
 
-                    algorithm = new BubbleSort("Сортировка пузырьком",text, tasks);
+                    algorithm = new BubbleSort("Сортировка пузырьком", text, tasks);
                     break;
             }
             return algorithm;
-        }
-
-
-        public void SetNewAlgorithm(object items,string nameAlgorithm)
-        {
-            _algorithmController.Save(items, $"{nameAlgorithm}.dat");
         }
 
     }

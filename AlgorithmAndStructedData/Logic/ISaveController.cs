@@ -5,5 +5,6 @@ namespace AlgorithmAndStructedData.Logic
     {
         void Save(object items, string fileName);
         T Load<T>(string fileName);
+        void CreateDir(string path);
     }
 }
