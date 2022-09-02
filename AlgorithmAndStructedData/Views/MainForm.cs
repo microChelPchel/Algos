@@ -15,6 +15,7 @@ namespace AlgorithmAndStructedData
         private AlgorithmController _algorithmController;
         private SettingController _settingController;
         private TaskModel _currentTaskModel;
+        private DirectiveController _directiveController;
 
         private string _currentTaskResult;
 
@@ -24,8 +25,15 @@ namespace AlgorithmAndStructedData
             _algorithmController = new AlgorithmController();
             _settingController = new SettingController(); 
             _currentTaskResult = "";
-
+            _directiveController = new DirectiveController();
+            CreateAlgorithm();
         }
+
+        private void CreateAlgorithm()
+        {
+            _directiveController.CheckDir("Algorithms");
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {

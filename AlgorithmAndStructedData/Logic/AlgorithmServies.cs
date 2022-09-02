@@ -13,12 +13,12 @@ namespace AlgorithmAndStructedData.Logic
 
         public void SetNewAlgorithm(object items, string nameAlgorithm)
         {
-            _algorithmController.Save(items, $"~algos/{nameAlgorithm}.dat");
+            _algorithmController.Save(items, $@"Algorithms/{nameAlgorithm}.dat");
         }
 
         public Algorithm GetAlgorithm(string nameAlgorithm)
         {
-            return _algorithmController.Load<Algorithm>($"{nameAlgorithm}.dat");
+            return _algorithmController.Load<Algorithm>($@"Algorithms/{nameAlgorithm}.dat");
         }
     }
 }
