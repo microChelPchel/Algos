@@ -4,6 +4,7 @@ using AlgorithmAndStructedData.Logic.FormFactory;
 using AlgorithmAndStructedData.Models.Base;
 using AlgorithmAndStructedData.Views;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace AlgorithmAndStructedData
@@ -34,6 +35,12 @@ namespace AlgorithmAndStructedData
             _directiveController.CheckDir("Algorithms");
         }
 
+        private List<Algorithm> GetlCollection()
+        {
+           return _directiveController.GetListFilesDirectory("Algorithms");
+        }
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -63,7 +70,6 @@ namespace AlgorithmAndStructedData
 
             this.treeView1.SelectedNode = null;
         }
-
 
         private void SetVisibleNode(int index)
         {
