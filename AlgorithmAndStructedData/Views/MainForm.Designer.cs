@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
-            treeNode26});
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Структуры данных");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Настройки");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
+            treeNode1});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Структуры данных");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Настройки");
             this.panel1 = new System.Windows.Forms.Panel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.AlgorithmPanel = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@
             this.TasksLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.AlgorithmPanel.SuspendLayout();
             this.SuspendLayout();
@@ -71,21 +71,21 @@
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.treeView1.Location = new System.Drawing.Point(3, 48);
             this.treeView1.Name = "treeView1";
-            treeNode26.Name = "Node1";
-            treeNode26.Text = "Сортировка пузырьком";
-            treeNode27.Name = "Node0";
-            treeNode27.Text = "Алгоритмы";
-            treeNode28.Name = "Node1";
-            treeNode28.Text = "Структуры данных";
-            treeNode29.Name = "Node0";
-            treeNode29.Text = "Паттерны проектирования";
-            treeNode30.Name = "Node0";
-            treeNode30.Text = "Настройки";
+            treeNode1.Name = "Node1";
+            treeNode1.Text = "Сортировка пузырьком";
+            treeNode2.Name = "Алгоритмы";
+            treeNode2.Text = "Алгоритмы";
+            treeNode3.Name = "Структуры данных";
+            treeNode3.Text = "Структуры данных";
+            treeNode4.Name = "Паттерны проектирования";
+            treeNode4.Text = "Паттерны проектирования";
+            treeNode5.Name = "Node0";
+            treeNode5.Text = "Настройки";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode27,
-            treeNode28,
-            treeNode29,
-            treeNode30});
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5});
             this.treeView1.Size = new System.Drawing.Size(281, 708);
             this.treeView1.TabIndex = 1;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -120,6 +120,29 @@
             this.AlgorithmPanel.Size = new System.Drawing.Size(1147, 861);
             this.AlgorithmPanel.TabIndex = 1;
             this.AlgorithmPanel.Visible = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.linkLabel1.Location = new System.Drawing.Point(108, 836);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(86, 16);
+            this.linkLabel1.TabIndex = 14;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Посмотреть";
+            this.linkLabel1.Visible = false;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(7, 550);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 25);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Код:";
             // 
             // listBox1
             // 
@@ -209,29 +232,6 @@
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name";
             this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(7, 550);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 25);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Код:";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.linkLabel1.Location = new System.Drawing.Point(108, 836);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(86, 16);
-            this.linkLabel1.TabIndex = 14;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Посмотреть";
-            this.linkLabel1.Visible = false;
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // MainForm
             // 

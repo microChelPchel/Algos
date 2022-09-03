@@ -40,7 +40,7 @@ test_test_test_test_test_test_test_test_test_test_test_test_test_test_",
 
 
 
-                    algorithm = new BubbleSort("Сортировка пузырьком", text, tasks);
+                    algorithm = new BubbleSort("Алгоритмы","Сортировка пузырьком", text, tasks);
                     break;
             }
             return algorithm;

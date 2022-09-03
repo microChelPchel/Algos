@@ -123,7 +123,8 @@ namespace AlgorithmAndStructedData.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var item = new Algorithm(textBox1.Text,textBox2.Text);
+            var parrent = comboBox1.SelectedItem.ToString();
+            var item = new Algorithm(parrent,textBox1.Text,textBox2.Text);
             _algorithmController.SetAlgorithm(item, textBox1.Text);
             MessageBox.Show("Сохраненно");
         }

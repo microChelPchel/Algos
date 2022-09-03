@@ -6,7 +6,8 @@ namespace AlgorithmAndStructedData.Models.Sort
     internal class BubbleSort : Algorithm
     {
 
-        public BubbleSort(string name,string text, List<TaskModel> tasks) : base(name,text, tasks)
+        public BubbleSort(string parrent, string name,string text, List<TaskModel> tasks) 
+            : base(parrent,name, text, tasks)
         {
             
         }

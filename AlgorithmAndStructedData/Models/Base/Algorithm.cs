@@ -6,18 +6,22 @@ namespace AlgorithmAndStructedData.Models.Base
     [Serializable]
     internal class Algorithm
     {
+        private string _parrent; 
         private string _name;
         private string _text;
         private List<TaskModel> _tasks;
 
-        public Algorithm(string name, string text)
+
+        public Algorithm(string parrent,string name, string text)
         {
+            _parrent = parrent;
             _name = name;
             _text = text;
         }
 
 
-        public Algorithm(string name, string text, List<TaskModel> tasks) : this(name,text)
+        public Algorithm(string parrent, string name, string text, List<TaskModel> tasks)
+            : this(parrent,name, text)
         {
             _tasks = tasks;        
         }
@@ -40,6 +44,13 @@ namespace AlgorithmAndStructedData.Models.Base
             private set { _name = value; }
         }
 
-        
+        public string Parrent
+        {
+            get { return _parrent; }
+            private set { _parrent = value; }
+        }
+
+
+
     }
 }

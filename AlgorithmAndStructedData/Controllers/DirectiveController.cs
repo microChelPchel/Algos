@@ -21,7 +21,7 @@ namespace AlgorithmAndStructedData.Controllers
             var nameFiles = Directory.GetFiles(patch, pattern);
             foreach (var nameFile in nameFiles)
             {
-                var item = Load<Algorithm>(nameFile + pattern);
+                var item = Load<Algorithm>(nameFile);
                 result.Add(item);
             }
             return result;

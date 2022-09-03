@@ -17,6 +17,7 @@ namespace AlgorithmAndStructedData
         private SettingController _settingController;
         private TaskModel _currentTaskModel;
         private DirectiveController _directiveController;
+        private List<Algorithm> _algorithms;
 
         private string _currentTaskResult;
 
@@ -28,19 +29,13 @@ namespace AlgorithmAndStructedData
             _currentTaskResult = "";
             _directiveController = new DirectiveController();
             CreateAlgorithm();
+            _algorithms = _directiveController.GetListFilesDirectory("Algorithms");
         }
 
         private void CreateAlgorithm()
         {
             _directiveController.CheckDir("Algorithms");
         }
-
-        private List<Algorithm> GetlCollection()
-        {
-           return _directiveController.GetListFilesDirectory("Algorithms");
-        }
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -67,6 +62,18 @@ namespace AlgorithmAndStructedData
                 remIndex++;
             }
 
+            if (_algorithms.Count != 0)
+            {
+                foreach (var item in _algorithms)
+                {
+                    var index = treeView1.Nodes.IndexOfKey(item.Parrent);
+                    if (index == -1)
+                        continue;
+                    treeView1.Nodes[index].Nodes.Add(item.Name);
+                
+                }
+            }
+
 
             this.treeView1.SelectedNode = null;
         }
@@ -89,6 +96,14 @@ namespace AlgorithmAndStructedData
                 _firstStartFlag = true;
                 return;
             }
+
+            //from file
+
+
+
+
+
+            //Base algorithm and menu
             var creater = new CreaterView();
             string name = e.Node.Text;
             Control form = null;
@@ -136,6 +151,9 @@ namespace AlgorithmAndStructedData
                 SetAlgosControlsText(algorithm); 
                 return;
             }
+
+
+
         }
 
         private void SetAlgosControlsText(Algorithm algorithm)
