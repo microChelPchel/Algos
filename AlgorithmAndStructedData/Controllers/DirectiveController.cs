@@ -13,7 +13,7 @@ namespace AlgorithmAndStructedData.Controllers
 
         public List<Algorithm> GetListFilesDirectory(string patch,string pattern="*.dat")
         {
-            if (!Directory.Exists(patch))
+            if (CheckDirective(patch))
             {
                 return default;
             }
@@ -25,6 +25,17 @@ namespace AlgorithmAndStructedData.Controllers
                 result.Add(item);
             }
             return result;
+        }
+
+
+        public void DeleteFile(string patch)
+        {
+            File.Delete(patch);
+        }
+
+        private bool CheckDirective(string patch)
+        {
+            return !Directory.Exists(patch);
         }
     
     }

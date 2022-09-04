@@ -50,7 +50,10 @@ namespace AlgorithmAndStructedData.Models.Base
             private set { _parrent = value; }
         }
 
-
+        public override string ToString()
+        {
+            return Name;
+        }
 
     }
 }

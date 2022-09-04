@@ -1,6 +1,6 @@
 ﻿namespace AlgorithmAndStructedData.Views
 {
-    partial class DeleateForm
+    partial class DeleteForm
     {
         /// <summary>
         /// Required designer variable.

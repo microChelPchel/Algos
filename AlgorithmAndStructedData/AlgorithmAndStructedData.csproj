@@ -70,11 +70,11 @@
     <Compile Include="Views\AlgosForm.Designer.cs">
       <DependentUpon>AlgosForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\DeleateForm.cs">
+    <Compile Include="Views\DeleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\DeleateForm.Designer.cs">
-      <DependentUpon>DeleateForm.cs</DependentUpon>
+    <Compile Include="Views\DeleteForm.Designer.cs">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MainForm.cs">
       <SubType>Form</SubType>
@@ -120,8 +120,8 @@
     <EmbeddedResource Include="Views\AlgosForm.resx">
       <DependentUpon>AlgosForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\DeleateForm.resx">
-      <DependentUpon>DeleateForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\DeleteForm.resx">
+      <DependentUpon>DeleteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

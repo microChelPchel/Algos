@@ -13,4 +13,4 @@ D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\o
 D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Views.SettingsForm.resources
 D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Views.SolutionForm.resources
 D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Views.ResultForm.resources
-D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Views.DeleateForm.resources
+D:\Users\MGaming\Desktop\git\AlgorithmAndStructedData\AlgorithmAndStructedData\obj\Debug\AlgorithmAndStructedData.Views.DeleteForm.resources
