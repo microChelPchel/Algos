@@ -97,12 +97,6 @@ namespace AlgorithmAndStructedData
                 return;
             }
 
-            //from file
-
-
-
-
-
             //Base algorithm and menu
             var creater = new CreaterView();
             string name = e.Node.Text;
@@ -128,8 +122,19 @@ namespace AlgorithmAndStructedData
                     algorithm = _algorithmController.GetAlgorithm(Logic.AlgosFactory.AlgosEnum.BubbleSort);
                     break;
             }
-            if (form==null)
+            
+            if (form == null)
+            {
+                //case when item from file
+                algorithm = _algorithms.Find(x => x.Name.Equals(name));
+                if (algorithm == null)
+                    return;
+                AlgorithmPanel.Visible = true;
+                SetAlgosControlsText(algorithm, false);
                 return;
+            }
+
+
             if (form is Form frm)
             {
                 frm.ShowDialog();
@@ -148,7 +153,7 @@ namespace AlgorithmAndStructedData
                         }
                     }
                 }
-                SetAlgosControlsText(algorithm); 
+                SetAlgosControlsText(algorithm,true); 
                 return;
             }
 
@@ -156,7 +161,8 @@ namespace AlgorithmAndStructedData
 
         }
 
-        private void SetAlgosControlsText(Algorithm algorithm)
+       
+        private void SetAlgosControlsText(Algorithm algorithm, bool isBaseAlgorithm)
         {
             if (algorithm == null)
                 return;
@@ -164,11 +170,20 @@ namespace AlgorithmAndStructedData
             textBox1.Text = algorithm.Text;
             listBox1.Items.Clear();
 
-            foreach (var item in algorithm.Tasks)
+            if (isBaseAlgorithm)
             {
-                listBox1.Items.Add(item);
+                panel2.Visible = false;
+                foreach (var item in algorithm.Tasks)
+                {
+                    listBox1.Items.Add(item);
+                }
             }
+            else
+            {
+                panel2.Visible = true;
 
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -224,6 +239,10 @@ namespace AlgorithmAndStructedData
             //var collection = new AlgorithmController().GetAlgorithmFile();
         }
 
+        private void AlgorithmPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }
