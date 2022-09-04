@@ -29,21 +29,25 @@ namespace AlgorithmAndStructedData
             _currentTaskResult = "";
             _directiveController = new DirectiveController();
             CreateAlgorithm();
-            _algorithms = _directiveController.GetListFilesDirectory("Algorithms");
-        }
-
-        private void CreateAlgorithm()
-        {
-            _directiveController.CheckDir("Algorithms");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            LoadDataTree();
+        }
+        private void CreateAlgorithm()
+        {
+            _directiveController.CheckDir("Algorithms");
+        }
+        private void FillCollection()
+        {
+            _algorithms = _directiveController.GetListFilesDirectory("Algorithms");
+        }
+
+        private void LoadDataTree()
+        {
+            FillFixedCollection();
+            FillCollection();
             var section = _settingController.LoadSettings().Item1;
             var remIndex = 0;
             if (section.IsVisAlgo)
@@ -61,7 +65,7 @@ namespace AlgorithmAndStructedData
                 SetVisibleNode(2 - remIndex);
                 remIndex++;
             }
-
+            ClearSubTree();
             if (_algorithms.Count != 0)
             {
                 foreach (var item in _algorithms)
@@ -70,12 +74,33 @@ namespace AlgorithmAndStructedData
                     if (index == -1)
                         continue;
                     treeView1.Nodes[index].Nodes.Add(item.Name);
-                
                 }
             }
-
-
             this.treeView1.SelectedNode = null;
+        }
+
+        private void ClearSubTree()
+        {
+            for (var i = 0; i < treeView1.Nodes.Count; i++)
+            {
+                treeView1.Nodes[i].Nodes.Clear();
+            }
+        }
+
+
+        private void FillFixedCollection()
+        {
+            //Алгоритмы
+            treeView1.Nodes[0].Nodes.Add("Сортировка пузырьком");
+            //Структуры данных
+
+            //Паттерны
+        }
+
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void SetVisibleNode(int index)
@@ -134,10 +159,11 @@ namespace AlgorithmAndStructedData
                 return;
             }
 
-
             if (form is Form frm)
             {
+               // AlgorithmPanel.Visible = false;
                 frm.ShowDialog();
+                LoadDataTree();
                 return;
             }
 

@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Сортировка пузырьком");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Алгоритмы", new System.Windows.Forms.TreeNode[] {
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Структуры данных");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Настройки");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Алгоритмы");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Структуры данных");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Паттерны проектирования");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Настройки");
             this.panel1 = new System.Windows.Forms.Panel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label1 = new System.Windows.Forms.Label();
             this.AlgorithmPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new AlgorithmAndStructedData.Controls.OpacityPanel();
+            this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -49,8 +49,6 @@
             this.TasksLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.NameLabel = new System.Windows.Forms.Label();
-            this.panel2 = new AlgorithmAndStructedData.Controls.OpacityPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.AlgorithmPanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,25 +69,24 @@
             // 
             this.treeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(193)))), ((int)(((byte)(221)))));
             this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.treeView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.treeView1.Location = new System.Drawing.Point(3, 48);
+            this.treeView1.Location = new System.Drawing.Point(0, 48);
             this.treeView1.Name = "treeView1";
-            treeNode11.Name = "Node1";
-            treeNode11.Text = "Сортировка пузырьком";
-            treeNode12.Name = "Алгоритмы";
-            treeNode12.Text = "Алгоритмы";
-            treeNode13.Name = "Структуры данных";
-            treeNode13.Text = "Структуры данных";
-            treeNode14.Name = "Паттерны проектирования";
-            treeNode14.Text = "Паттерны проектирования";
-            treeNode15.Name = "Node0";
-            treeNode15.Text = "Настройки";
+            treeNode1.Name = "Алгоритмы";
+            treeNode1.Text = "Алгоритмы";
+            treeNode2.Name = "Структуры данных";
+            treeNode2.Text = "Структуры данных";
+            treeNode3.Name = "Паттерны проектирования";
+            treeNode3.Text = "Паттерны проектирования";
+            treeNode4.Name = "Node0";
+            treeNode4.Text = "Настройки";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12,
-            treeNode13,
-            treeNode14,
-            treeNode15});
-            this.treeView1.Size = new System.Drawing.Size(281, 708);
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4});
+            this.treeView1.Size = new System.Drawing.Size(287, 813);
             this.treeView1.TabIndex = 1;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -125,6 +122,25 @@
             this.AlgorithmPanel.TabIndex = 1;
             this.AlgorithmPanel.Visible = false;
             this.AlgorithmPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AlgorithmPanel_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(1, 272);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1144, 586);
+            this.panel2.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("News706 BT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.IndianRed;
+            this.label3.Location = new System.Drawing.Point(80, 253);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(915, 35);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Для созданных элементов не поддерживается решение задач";
             // 
             // linkLabel1
             // 
@@ -237,25 +253,6 @@
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name";
             this.NameLabel.Click += new System.EventHandler(this.NameLabel_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(1, 272);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1144, 586);
-            this.panel2.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("News706 BT", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.IndianRed;
-            this.label3.Location = new System.Drawing.Point(80, 253);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(915, 35);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Для созданных элементов не поддерживается решение задач";
             // 
             // MainForm
             // 
