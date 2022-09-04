@@ -40,13 +40,10 @@ namespace AlgorithmAndStructedData.Views
             comboBox2.SelectedIndex = 0;
         }
 
-
-
         private string[] GetCollections(string nameSetction)
         {
             return default;
         }
-
 
         private void DeleateForm_Load(object sender, EventArgs e)
         {

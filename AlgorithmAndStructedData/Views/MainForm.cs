@@ -156,12 +156,8 @@ namespace AlgorithmAndStructedData
                 SetAlgosControlsText(algorithm,true); 
                 return;
             }
-
-
-
         }
 
-       
         private void SetAlgosControlsText(Algorithm algorithm, bool isBaseAlgorithm)
         {
             if (algorithm == null)
@@ -181,8 +177,6 @@ namespace AlgorithmAndStructedData
             else
             {
                 panel2.Visible = true;
-
-
             }
         }
 
@@ -230,13 +224,6 @@ namespace AlgorithmAndStructedData
         {
             var formResult = new ResultForm(_currentTaskResult);
             formResult.ShowDialog();
-        }
-
-
-        //return type 
-        private void GetAlgorithms()
-        {
-            //var collection = new AlgorithmController().GetAlgorithmFile();
         }
 
         private void AlgorithmPanel_Paint(object sender, PaintEventArgs e)
